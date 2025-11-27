@@ -44,7 +44,7 @@ export default function Home() {
                 <img
                 src="https://preview.redd.it/he-visto-a-personas-que-dicen-que-no-te-metas-con-una-chica-v0-yn4avphyl0sb1.png?auto=webp&s=c3f2d353390b82ba394885bd91f8effaac6326f9"
                 alt="Abogato"
-                style={{ maxWidth: "50%", borderRadius: "8px" }}
+                style={{ maxWidth: "50%", borderRadius: "10px" }}
                 />
                 <p className="mt-3 text-lg text-center">
                 El honorable <strong>Abogato</strong>, defensor oficial de las croquetas.
