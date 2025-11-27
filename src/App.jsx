@@ -1,6 +1,15 @@
-import 'primeflex/primeflex.css';
-import GatosContainers from './containers/GatosContainers';
+import { useState } from 'react'
+import GatosContainers from './containers/GatosContainers'
 
-export default function App() {
-  return <GatosContainers />;
+function App() {
+  const [count, setCount] = useState(0)
+
+  return (
+    <>
+    <div className="row">
+      <GatosContainers></GatosContainers>
+    </div>
+    </>
+  )
+    main
 }
