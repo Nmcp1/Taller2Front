@@ -10,6 +10,13 @@ body {
   min-height: 100vh;
 }
 
+.app-content-container {
+    max-width: 1200px; 
+    width: 90%;       
+    margin: 0 auto;  
+    padding-top: 2rem; 
+}
+
 .navbar-wrapper {
   background-color: $primary-color;
 }
@@ -58,4 +65,26 @@ body {
       font-weight: 700;
     }
   }
+  }
+
+  .surface-card {
+  background: white;
+  border-radius: 20px;
+}
+
+.p-button-warning {
+  background-color: #F5973D !important;
+  border: none !important;
+
+  &:hover {
+    background-color: #ffa85c !important;
+  }
+}
+
+.p-carousel .p-carousel-content {
+  padding: 1rem 0;
+}
+
+.p-carousel .p-carousel-indicators .p-carousel-indicator button {
+  background-color: #F5973D !important;
 }

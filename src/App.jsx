@@ -6,10 +6,11 @@ function App() {
 
   return (
     <>
-    <div className="row">
+    <div>
       <GatosContainers></GatosContainers>
     </div>
     </>
   )
-    main
 }
+
+export default App
