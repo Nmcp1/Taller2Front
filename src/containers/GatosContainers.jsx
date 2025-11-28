@@ -1,30 +1,19 @@
-import React, { useContext, useEffect } from 'react'
-import { GatosContext } from '../providers/context'
-import GatosCarrusel from '../components/GatosCarrusel';
-import { Button } from 'primereact/button';
-import { ProgressSpinner } from 'primereact/progressspinner';
+import { Routes, Route } from "react-router-dom";
+import Home from "../components/Home";
+import GatosView from "../components/GatosView";
+import Navbar from "../components/Navbar";
 
-function GatosContainers() {
-  const {cargarGatos, gatos, loading} = useContext(GatosContext);
-  useEffect(()=>{
-    cargarGatos();
-  }, [])
-
-  if (loading){
-    return <ProgressSpinner style={{width: '200px', height: '200px'}} strokeWidth="2" fill="var(--surface-ground)" animationDuration="2s" />
-  }
-  
+export default function GatosContainers() {
   return (
-    <row>
-    <div className="row">
-    <GatosCarrusel gatos={gatos}></GatosCarrusel>
-    </div>
-    <div className="row">
-        <Button label="Recargar Gatos" onClick={cargarGatos}/>
-    </div>
-      
-    </row>
-  )
-}
+    <>
+      <Navbar />
 
-export default GatosContainers
+      <div className="content-wrapper" style={{ padding: "2rem" }}>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/gatos" element={<GatosView />} />
+        </Routes>
+      </div>
+    </>
+  );
+}
